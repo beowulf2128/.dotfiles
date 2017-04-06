@@ -12,6 +12,7 @@ autocmd BufWritePre *.rb :%s/\s\+$//e
 autocmd BufWritePre *.js :%s/\s\+$//e
 autocmd BufWritePre *.erb :%s/\s\+$//e
 autocmd BufWritePre *.yml :%s/\s\+$//e
+autocmd BufWritePre *.sql :%s/\s\+$//e
 
 " Brighten the color of comments
 hi comment cterm=NONE ctermfg=darkgreen gui=NONE guifg=green
