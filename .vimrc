@@ -38,10 +38,13 @@ set splitbelow    " Open horizontal split panes to the bottom
 
 " Install Pathogen
 execute pathogen#infect()
+
 " My plugins:
+" - pathogen
 " - CtrlP
 " - surround    cd ~/.vim/bundle && git clone https://github.com/tpope/vim-surround
 " - splitjoin
 " - tabular
 " To explorer:
 "   Fugutive
+"   ctags
