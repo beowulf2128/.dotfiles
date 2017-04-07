@@ -36,6 +36,12 @@ hi CursorLine term=bold cterm=bold guibg=Grey40
 set splitright    " Open vertical split panes to the right
 set splitbelow    " Open horizontal split panes to the bottom
 
-" CtrlP plugin, per http://kien.github.io/ctrlp.vim/#installation
-set runtimepath^=~/.vim/bundle/kien-ctrlp.vim-564176f
-
+" Install Pathogen
+execute pathogen#infect()
+" My plugins:
+" - CtrlP
+" - surround    cd ~/.vim/bundle && git clone https://github.com/tpope/vim-surround
+" - splitjoin
+" - tabular
+" To explorer:
+"   Fugutive
