@@ -48,3 +48,4 @@ execute pathogen#infect()
 " To explorer:
 "   Fugutive
 "   ctags
+"   How to comment out a line and duplicate it below not commented out?
