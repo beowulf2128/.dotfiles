@@ -7,6 +7,7 @@ fi
 
 alias lsal="ls -al"
 alias vi=vim
+alias src_bashrc="source ~/.bashrc"
 
 ### Change prompt to be more helpful
 #export PS1='$(whoami)@$(hostname):$(pwd)$ ' # <- grabs full path...too long.
