@@ -1,3 +1,22 @@
+
+" Install Pathogen
+execute pathogen#infect()
+
+" My plugins:
+" - pathogen X
+" - CtrlP
+" - surround    cd ~/.vim/bundle && git clone https://github.com/tpope/vim-surround
+" - splitjoin
+" - tabular
+" - airline
+" To explorer:
+"   Fugutive
+"   ctags
+"   How to comment out a line and duplicate it below not commented out?
+
+" Enable lots of pretty colors (airline needs this)
+to set t_Co=256
+
 " Always set line numbers
 set number
 
@@ -39,17 +58,5 @@ set splitbelow    " Open horizontal split panes to the bottom
 " Stop Q from taking me to Ex mode, which I have no use for
 nnoremap Q <nop>
 
+let g:airline_theme='simple'
 
-" Install Pathogen
-execute pathogen#infect()
-
-" My plugins:
-" - pathogen
-" - CtrlP
-" - surround    cd ~/.vim/bundle && git clone https://github.com/tpope/vim-surround
-" - splitjoin
-" - tabular
-" To explorer:
-"   Fugutive
-"   ctags
-"   How to comment out a line and duplicate it below not commented out?
