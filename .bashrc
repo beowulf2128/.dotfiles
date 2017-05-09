@@ -17,9 +17,10 @@ parse_git_branch() {
 export PS1='\[\033[36;40m\]$(whoami)@$(hostname):${PWD##*/}$(parse_git_branch)$\[\033[0m\] '
 
 ### tmux
+alias tmux="tmux -2"
 # starts tmux with 2 panes, the larger on the bottom
 #alias ttmux="tmux new-session 'bash' \; split-window 'bash' \; select-layout main-horizontal"
-alias ttmux="tmux -2 new-session 'bash' \; split-window 'bash' \; split-window 'bash' \; select-layout even-vertical \; new-window 'bash' \; new-window 'bash' \; split-window 'bash' \; select-layout even-vertical \; new-window 'bash' \; set -g status-right ' #(TZ=\"America/New_York\" date +\"%%l:%%M:%%P %%m/%%d\") ' \; select-window -t 1"
+alias ttmux="tmux new-session 'bash' \; split-window 'bash' \; split-window 'bash' \; select-layout even-vertical \; new-window 'bash' \; new-window 'bash' \; split-window 'bash' \; select-layout even-vertical \; new-window 'bash' \; set -g status-right ' #(TZ=\"America/New_York\" date +\"%%l:%%M:%%P %%m/%%d\") ' \; select-window -t 1"
 
 function ttmux2 {
   cddev
