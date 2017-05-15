@@ -36,9 +36,13 @@ autocmd BufWritePre *.less :%s/\s\+$//e
 autocmd BufWritePre *.jsx :%s/\s\+$//e
 autocmd BufWritePre *.html :%s/\s\+$//e
 autocmd BufWritePre *.css :%s/\s\+$//e
+autocmd BufWritePre *.json :%s/\s\+$//e
 
 " Brighten the color of comments
 hi comment cterm=NONE ctermfg=darkgreen gui=NONE guifg=green
+
+" Darken search highlight background
+hi Search cterm=NONE ctermfg=grey ctermbg=blue
 
 " Set .erb file syntax prefs
 autocmd BufNewFile,BufRead *.html.erb set syntax=html
