@@ -66,5 +66,11 @@ set splitbelow    " Open horizontal split panes to the bottom
 " Stop Q from taking me to Ex mode, which I have no use for
 nnoremap Q <nop>
 
+" Tell vimgrep to ignore certain directories
+" ... node
+set wildignore+=node_modules/**,public/**
+" ... rails
+set wildignore+=vendor/**
+
 let g:airline_theme='simple'
 
