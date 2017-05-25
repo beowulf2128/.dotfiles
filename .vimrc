@@ -72,5 +72,8 @@ set wildignore+=node_modules/**,public/**
 " ... rails
 set wildignore+=vendor/**
 
+" Tell CtrlP to ignore the same dirs
+let g:ctrlp_custom_ignore = 'node_modules\|vendor\'
+ 
 let g:airline_theme='simple'
 
