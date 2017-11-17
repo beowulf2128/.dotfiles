@@ -3,6 +3,9 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# for tmuxinator
+export EDITOR="vim"
+
 ### 2) Common .bashrc among all dev env's
 
 alias lsal="ls -al"
