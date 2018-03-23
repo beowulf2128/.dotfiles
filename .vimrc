@@ -72,6 +72,9 @@ set wildignore+=node_modules/**,public/**
 " ... rails
 set wildignore+=vendor/**
 
+set ignorecase " Case-insensitive searching.
+set smartcase  " But case-sensitive if expression contains a capital letter.
+
 " Tell CtrlP to ignore the same dirs
 let g:ctrlp_custom_ignore = 'node_modules\|vendor\'
  
