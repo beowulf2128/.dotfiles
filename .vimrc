@@ -80,3 +80,14 @@ let g:ctrlp_custom_ignore = 'node_modules\|vendor\'
  
 let g:airline_theme='simple'
 
+" Map ,c to duplicate a line and then comment out the original line
+function DupAndCommentOut()
+  let lineNo=line('.')
+  let line=getline('.')
+  let comment_leader="# "
+  if &filetype == "javascript"
+    comment_leader="// "
+  endif
+  call append(lineNo-1, comment_leader . line)
+endfunction
+nnoremap ,c :call DupAndCommentOut()<CR> 
