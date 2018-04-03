@@ -80,7 +80,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|vendor\'
  
 let g:airline_theme='simple'
 
-" Map ,c to duplicate a line and then comment out the original line
+" Map ,d to duplicate a line and then comment out the original line
 function DupAndCommentOut()
   let lineNo=line('.')
   let line=getline('.')
@@ -90,4 +90,12 @@ function DupAndCommentOut()
   endif
   call append(lineNo-1, comment_leader . line)
 endfunction
-nnoremap ,c :call DupAndCommentOut()<CR> 
+nnoremap ,d :call DupAndCommentOut()<CR>
+
+" Commenting (,cc) and uncommenting(,cu) blocks of code.
+" from: https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim#1676690
+autocmd FileType javascript         let b:comment_leader = '// '
+autocmd FileType sh,ruby,python,erb let b:comment_leader = '# '
+autocmd FileType vim                let b:comment_leader = '" '
+noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
+noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
