@@ -9,10 +9,10 @@ execute pathogen#infect()
 " - splitjoin
 " - tabular
 " - airline
+" - comment out a line and duplicate it below not commented out... custom vim func
 " To explorer:
 "   Fugutive
 "   ctags
-"   How to comment out a line and duplicate it below not commented out?
 
 " Enable lots of pretty colors (airline needs this)
 to set t_Co=256
