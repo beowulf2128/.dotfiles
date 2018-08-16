@@ -2,11 +2,14 @@
 Bash, Vim, Tmux, IRB, ...
 
 # Setup of new machine:
+
+```
 ln -s ~/.dotfiles/.bashrc ~/.bashrc
 ln -s ~/.dotfiles/.vimrc ~/.vimrc
 ln -s ~/.dotfiles/.irbrc ~/.irbrc
 ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/.vim ~/.vim
+```
 
 # Install tmux 2.2 on Centos 7.1
 https://gist.github.com/relaxdiego/273d511cb156d2c7d0171a0ccaa5ab2b
