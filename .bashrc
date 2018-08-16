@@ -8,6 +8,9 @@ export EDITOR="vim"
 
 ### 2) Common .bashrc among all dev env's
 
+# my own executables
+export PATH=~/.dotfiles/bin:$PATH
+
 alias lsal="ls -al"
 alias vi=vim
 alias src_bashrc="source ~/.bashrc"
