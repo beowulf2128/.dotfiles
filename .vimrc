@@ -76,7 +76,7 @@ set ignorecase " Case-insensitive searching.
 set smartcase  " But case-sensitive if expression contains a capital letter.
 
 " Tell CtrlP to ignore the same dirs
-let g:ctrlp_custom_ignore = 'node_modules\|vendor\'
+let g:ctrlp_custom_ignore = 'node_modules\|vendor\|public\packs\'
  
 let g:airline_theme='simple'
 
