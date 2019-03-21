@@ -132,4 +132,9 @@ map <leader>sn       :set number<CR>
 map <leader>do       :call DupAndCommentOut()<CR>
 map <leader>cc       :<C-B>silent <C-E>s/^/<C-R>=escape(g:comment_map[&filetype],'\/')<CR>/<CR>:nohlsearch<CR>
 map <leader>cu       :<C-B>silent <C-E>s/^\V<C-R>=escape(g:comment_map[&filetype],'\/')<CR>//e<CR>:nohlsearch<CR>
+" paste text in default buffer above current line. https://stackoverflow.com/questions/1346737/how-to-paste-in-a-new-line-with-vim
+" the space after the O is needed to retain tab indent, else ESC puts you back
+" to the very beginning of the line
+map <leader>P        O <ESC>P
+
 
