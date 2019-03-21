@@ -46,3 +46,6 @@ function ttmux2 {
 if [ -f ~/.bashrc.local ]; then
   . ~/.bashrc.local
 fi
+
+# Use VI key bindings when typing/editing bash commands
+set -o vi
